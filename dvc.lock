@@ -1,0 +1,13 @@
+schema: '2.0'
+stages:
+  validate-dataset-registry:
+    cmd: uv run python scripts/validate_dataset_registry.py
+    deps:
+    - path: data/registry/datasets.json
+      hash: md5
+      md5: 2646f05e94db90eb6242923ae46e1f02
+      size: 1185
+    - path: scripts/validate_dataset_registry.py
+      hash: md5
+      md5: 9d36fd0a3934830e842631cf830bb889
+      size: 1730

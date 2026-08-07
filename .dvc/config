@@ -1,5 +1,6 @@
 [core]
     remote = panel-storage
+[cache]
+    type = reflink
 [remote "panel-storage"]
     url = s3://panel-dvc
-

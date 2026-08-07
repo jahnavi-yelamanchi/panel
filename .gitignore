@@ -4,6 +4,7 @@
 .venv/
 __pycache__/
 *.py[cod]
+.DS_Store
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/
@@ -13,10 +14,13 @@ dist/
 build/
 .dvc/cache/
 .dvc/tmp/
+/data/raw/*
+!/data/raw/manga109-s/
+/data/raw/manga109-s/*
+!/data/raw/manga109-s/*.dvc
 .gstack/
 *.tfstate
 *.tfstate.*
 .terraform/
 *.tfvars
 !.example.tfvars
-

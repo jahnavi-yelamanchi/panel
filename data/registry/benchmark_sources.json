@@ -10,7 +10,11 @@
       "dataset_id": "manga109-s",
       "source_url": "https://manga109.github.io/manga109-project-website/en/index.html",
       "license_basis": "commercial-ml-results-only",
-      "download_state": "not-downloaded"
+      "source_revision": "f276b45293be4f4ca92f313a638d26dbcb50fbc2",
+      "archive": "Manga109s_released_2026_05_21.zip",
+      "dvc_pointer": "data/raw/manga109-s/Manga109s_released_2026_05_21.zip.dvc",
+      "dvc_md5": "3b2319504141ddd9da3fd5378e2a9c0f",
+      "download_state": "downloaded"
     },
     {
       "dataset_id": "comics",
@@ -32,4 +36,3 @@
     }
   ]
 }
-
