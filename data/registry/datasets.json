@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "datasets": [
+    {
+      "id": "manga109",
+      "purpose": ["benchmark", "research"],
+      "production_catalog": false,
+      "redistributable": false,
+      "license_review": "approved-research-only"
+    },
+    {
+      "id": "manga109-s",
+      "purpose": ["benchmark", "model-training"],
+      "production_catalog": false,
+      "redistributable": false,
+      "license_review": "approved-with-model-card-attribution"
+    },
+    {
+      "id": "comics",
+      "purpose": ["benchmark"],
+      "production_catalog": false,
+      "redistributable": false,
+      "license_review": "pending"
+    },
+    {
+      "id": "danbooru",
+      "purpose": ["benchmark"],
+      "production_catalog": false,
+      "redistributable": false,
+      "license_review": "pending"
+    },
+    {
+      "id": "anime-face-dataset",
+      "purpose": ["benchmark"],
+      "production_catalog": false,
+      "redistributable": false,
+      "license_review": "pending"
+    },
+    {
+      "id": "partner-licensed",
+      "purpose": ["catalog", "model-training"],
+      "production_catalog": true,
+      "redistributable": false,
+      "license_review": "partner-manifest-required"
+    }
+  ]
+}
+

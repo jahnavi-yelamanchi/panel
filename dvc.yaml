@@ -1,0 +1,7 @@
+stages:
+  validate-dataset-registry:
+    cmd: uv run python scripts/validate_dataset_registry.py
+    deps:
+      - data/registry/datasets.json
+      - scripts/validate_dataset_registry.py
+

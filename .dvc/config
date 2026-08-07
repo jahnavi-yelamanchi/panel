@@ -1,0 +1,5 @@
+[core]
+    remote = panel-storage
+[remote "panel-storage"]
+    url = s3://panel-dvc
+
