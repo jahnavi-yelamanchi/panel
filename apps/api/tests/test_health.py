@@ -1,5 +1,4 @@
 from fastapi.testclient import TestClient
-
 from panel_api.main import app
 
 

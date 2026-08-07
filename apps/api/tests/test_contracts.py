@@ -1,9 +1,8 @@
 from datetime import date
 
 import pytest
-from pydantic import ValidationError
-
 from panel_api.contracts import TitleManifestInput
+from pydantic import ValidationError
 
 
 def manifest() -> dict[str, object]:
