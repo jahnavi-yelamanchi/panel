@@ -1,0 +1,35 @@
+{
+  "sources": [
+    {
+      "dataset_id": "manga109",
+      "source_url": "https://manga109.github.io/manga109-project-website/en/index.html",
+      "license_basis": "academic-only",
+      "download_state": "not-downloaded"
+    },
+    {
+      "dataset_id": "manga109-s",
+      "source_url": "https://manga109.github.io/manga109-project-website/en/index.html",
+      "license_basis": "commercial-ml-results-only",
+      "download_state": "not-downloaded"
+    },
+    {
+      "dataset_id": "comics",
+      "source_url": null,
+      "license_basis": "source-identifier-required",
+      "download_state": "blocked"
+    },
+    {
+      "dataset_id": "danbooru",
+      "source_url": "https://danbooru.donmai.us/",
+      "license_basis": "per-image-rights-review-required",
+      "download_state": "blocked"
+    },
+    {
+      "dataset_id": "anime-face-dataset",
+      "source_url": null,
+      "license_basis": "source-identifier-required",
+      "download_state": "blocked"
+    }
+  ]
+}
+
