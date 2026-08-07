@@ -1,2 +1,1 @@
 """Panel API package."""
-

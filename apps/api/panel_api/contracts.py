@@ -1,5 +1,6 @@
 from datetime import date
 from enum import StrEnum
+from uuid import UUID
 
 from pydantic import BaseModel, Field, model_validator
 
@@ -52,3 +53,20 @@ class AssetInput(BaseModel):
     byte_size: int = Field(gt=0)
     media_type: str = Field(pattern=r"^image/(jpeg|png|webp)$")
     original_filename: str = Field(min_length=1, max_length=512)
+
+
+class QuarantineUploadInput(BaseModel):
+    sha256: str = Field(pattern=r"^[a-f0-9]{64}$")
+    media_type: str = Field(pattern=r"^image/(jpeg|png|webp)$")
+
+
+class IngestionPackageInput(BaseModel):
+    partner_name: str = Field(min_length=1, max_length=256)
+    manifest: TitleManifestInput
+    assets: list[AssetInput] = Field(min_length=1)
+
+
+class IngestionResponse(BaseModel):
+    title_id: UUID
+    asset_ids: list[UUID]
+    status: str
