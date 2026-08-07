@@ -44,3 +44,11 @@ class TitleManifestInput(BaseModel):
         if len(keys) != len(self.rights):
             raise ValueError("rights may contain only one grant per territory and surface")
         return self
+
+
+class AssetInput(BaseModel):
+    object_key: str = Field(pattern=r"^quarantine/[a-z0-9][a-z0-9/_.-]*$")
+    sha256: str = Field(pattern=r"^[a-f0-9]{64}$")
+    byte_size: int = Field(gt=0)
+    media_type: str = Field(pattern=r"^image/(jpeg|png|webp)$")
+    original_filename: str = Field(min_length=1, max_length=512)
